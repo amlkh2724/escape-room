@@ -1,0 +1,64 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    background: url(../img/img-escape/cropped-most-popular-escape-room-games.png)no-repeat center center/cover;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    opacity: 0.8;
+    width: auto;
+    max-width: 100%;
+}
+
+/* .menu-wrap .hamburger{
+    position: absolute;
+    height: 2rem;
+    background-color: gray;
+} */
+#showcase {
+    position: absolute;
+    bottom: 0;
+}
+
+@media (max-width: 576px) {
+    .logo {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-size: auto;
+    }
+
+    #showcase .container {
+        z-index: 1;
+        height: 4rem;
+        background-color: rgba(0, 0, 0, 0.988);
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    }
+
+    .containers {
+        height: 5rem;
+        color: #ffff;
+        background: #333;
+        text-align: center;
+    }
+
+    .containers>p {
+        padding: 1rem;
+        text-align: center;
+        /* font-weight: bold; */
+        /* font-size: 0.1cm; */
+        color: red;
+    }
+
+    .containers .background {
+        background-color: #333;
+        height: 9.3rem;
+        width: 100vw;
+        margin-top: 20rem;
+    }
+}
