@@ -30,10 +30,9 @@
     }
 }
 
-body {
-    /* background-color: rgba(255, 0, 0, 0.257); */
-    font-size: 62.5%;
-}
+
+/* iphone x */
+
 
 .logo {
     background: url(../img/img-escape/cropped-most-popular-escape-room-games.png)no-repeat center center/cover;
@@ -42,78 +41,346 @@ body {
     height: 100vh;
     opacity: 0.8;
     width: auto;
-    max-width: 100%;
+    /* max-width: 100%; */
     background-color: #333;
 }
 
-/* .menu-wrap .hamburger{
-    position: absolute;
-    height: 2rem;
-    background-color: gray;
-} */
 #showcase {
     position: absolute;
     bottom: 0;
 }
 
-@media(max-width:576px) {
+.logo {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: auto;
+}
 
-    /* .body{
-        background-color: red;
-    } */
-    .logo {
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-size: auto;
-    }
 
-    #showcase .container {
-        z-index: 1;
-        height: 4rem;
-        background-color: rgba(0, 0, 0, 0.988);
-        display: flex;
-        align-items: center;
-        justify-content: end;
-    }
+#showcase .container {
+    z-index: 1;
+    height: 4rem;
+    background-color: rgba(0, 0, 0, 0.988);
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
 
-    .containers {
-        height: 5rem;
-        color: #ffff;
-        background: #333;
-        text-align: center;
-    }
+.containers {
+    height: 5rem;
+    color: #ffff;
+    background: #333;
+    text-align: center;
+}
 
-    .containers>p {
-        padding: 1rem;
-        text-align: center;
-        /* font-weight: bold; */
-        /* font-size: 0.1cm; */
-        color: red;
-    }
+.containers>p {
+    padding: 1rem;
+    text-align: center;
+}
 
-    /* .containers .background {
-        background-color: #333;
-        height: 9.3rem;
-        width: 100vw;
-        margin-top: 20rem;
-    } */
+.imgs {
+    height: 690vh;
+    background: #2a2f2f;
+    animation: color 9s infinite linear;
+    /* padding: 1rem; */
+    /* gap: 1rem; */
+}
+
+.imgs .container {
+    position: relative;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    /* grid-template-columns: max-content; */
+    width: 400px;
+    gap: 4rem;
+
+}
+
+.imgs .container .text {
+    position: absolute;
+    top: 16rem;
+    right: 5rem;
+    color: #ffff;
+    /* text-align: center; */
+    /* width: 22rem; */
+}
+
+.imgs .container .text2 {
+    position: absolute;
+    top: 50rem;
+    /* color: red; */
+
+}
+
+.imgs .container .text3 {
+    position: absolute;
+    top: 84rem;
+    /* color: red; */
+}
+
+.imgs .container .text4 {
+    position: absolute;
+    top: 118rem;
+    /* color: red; */
+}
+
+.imgs .container .text5 {
+    position: absolute;
+    top: 152rem;
+}
+
+.imgs .container .text6 {
+    position: absolute;
+    top: 186rem;
+}
+
+.imgs .container .text7 {
+    position: absolute;
+    top: 220rem;
+    /* color: red; */
+}
+
+.imgs .container .text8 {
+    position: absolute;
+    top: 254rem;
+    /* color: red; */
+}
+
+img {
+    position: relative;
+    padding-bottom: 15rem;
+    background-color: #333;
+    width: 25rem;
+    height: 30rem;
+    display: flex;
+    align-items: center;
+}
+
+.askquest {
+    height: 58vh;
+    background-color: #333;
+}
+
+.askquest .container {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.2rem;
+    background-color: rgb(51, 51, 51);
+}
+
+.askquest .container>button {
+    background-color: black;
+    color: #ffff;
+    font-size: x-small;
+    width: 80%;
+    height: 3.3rem;
+}
+
+.askquest .container>p {
+    font-weight: bold;
+    font-size: medium;
+    text-align: center;
+    background-color: black;
+    width: 80%;
+    color: #ffff;
+}
+
+.footer {
+    line-height: 2rem;
+    height: 26vh;
+    background-color: black;
+    color: #ffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer>h2 {
+    color: #ffff;
+}
+
+.footer>h3 {
+    color: #ffff;
+}
+
+
+
+
+
+@media (min-width:300px) {
     .imgs {
-        height: 1000vh;
-        background: #2a2f2f;
-        /* Fallback */
-        animation: color 9s infinite linear;
-        text-align: center;
-        padding: 1rem;
+        height: 550vh;
+        width: 100%;
+    }
+
+    .askquest .container {
+        gap: 4rem;
+    }
+
+    .askquest .container>button {
+        background-color: black;
+        color: #ffff;
+        font-size: x-small;
+        width: 80%;
+        height: 4.3rem;
+    }
+}
+
+@media(min-width:500px) {
+    .imgs {
+        height: 690vh;
+    }
+
+    .askquest .container {
+        gap: 2rem;
+    }
+
+    .askquest .container>button {
+        background-color: black;
+        color: #ffff;
+        font-size: x-small;
+        width: 80%;
+        height: 4.3rem;
+    }
+}
+
+@media (min-width:768px) {
+    .imgs {
+        height: 220vh;
+        width: 100%;
     }
 
     .imgs .container {
-        position: relative;
-        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 800px;
+    }
 
-        justify-content: center;
+    .imgs .container .text {
+        line-height: 2rem;
+        font-weight: bold;
+        top: 16rem;
+        left: 1rem;
+        width: 300px;
+    }
+
+    .imgs .container .text2 {
+        line-height: 2rem;
+        font-weight: bold;
+        top: 16rem;
+        left: 28rem;
+        width: 300px;
+    }
+
+    .imgs .container .text3 {
+        line-height: 2rem;
+        position: absolute;
+        z-index: 1;
+        font-weight: bold;
+        top: 50rem;
+        left: 28rem;
+        width: 300px;
+    }
+
+    .imgs .container .text4 {
+        line-height: 2rem;
+        position: absolute;
+        z-index: 1;
+        font-weight: bold;
+        top: 84rem;
+        left: 28rem;
+        width: 300px;
+    }
+
+    .imgs .container .text5 {
+        line-height: 2rem;
+        position: absolute;
+        z-index: 1;
+        font-weight: bold;
+        top: 118rem;
+        left: 28rem;
+        width: 300px;
+    }
+
+    .imgs .container .text6 {
+        line-height: 2rem;
+        position: absolute;
+        z-index: 1;
+        font-weight: bold;
+        top: 118rem;
+        left: 1rem;
+        width: 300px;
+    }
+
+    .imgs .container .text7 {
+        line-height: 2rem;
+        position: absolute;
+        z-index: 1;
+        font-weight: bold;
+        top: 84rem;
+        left: 1rem;
+        width: 300px;
+    }
+
+    .imgs .container .text8 {
+        line-height: 2rem;
+        position: absolute;
+        z-index: 1;
+        font-weight: bold;
+        top: 50rem;
+        left: 1rem;
+        width: 300px;
+    }
+
+    .askquest {
+        height: 58vh;
+        background-color: #333;
+    }
+
+    .askquest .container {
+        padding: rem;
+        display: flex;
+        flex-direction: column;
         align-items: center;
-        grid-template-columns: 1fr;
-        gap: 4rem;
+        gap: 4.2rem;
+        background-color: rgb(51, 51, 51);
+    }
+
+    .askquest .container>button {
+        background-color: black;
+        color: #ffff;
+        font-size: medium;
+        width: 80%;
+        height: 6rem;
+    }
+
+    .askquest .container>p {
+        font-weight: bold;
+        font-size: medium;
+        text-align: center;
+        background-color: black;
+        height: 2rem;
+        width: 80%;
+        color: #ffff;
+    }
+
+}
+
+/* for my laptop min size */
+
+@media (min-width:770px) {
+    .imgs .container {
+        grid-template-columns: 1fr 1fr;
+        width: 800px;
+    }
+
+    .imgs {
+        height: 380vh;
+        background: #2a2f2f;
+        animation: color 9s infinite linear;
     }
 
     .imgs .container .text {
@@ -122,66 +389,92 @@ body {
         font-size: medium;
         font-weight: bold;
         top: 16rem;
-        left: 5rem;
+        left: 1rem;
         width: 300px;
-        color: red;
+        color: #ffff
     }
 
     .imgs .container .text2 {
+        line-height: 2rem;
         position: absolute;
-        top: 50rem;
-        color: red;
+        font-size: medium;
+        font-weight: bold;
+        top: 16rem;
+        left: 28rem;
+        width: 300px;
+        color: #ffff
     }
 
     .imgs .container .text3 {
+        line-height: 2rem;
         position: absolute;
-        top: 84rem;
-        color: red;
+        z-index: 1;
+        font-size: medium;
+        font-weight: bold;
+        top: 50rem;
+        left: 28rem;
+        width: 300px;
+        color: #ffff
     }
 
     .imgs .container .text4 {
+        line-height: 2rem;
         position: absolute;
-        top: 118rem;
-        color: red;
+        z-index: 1;
+        font-size: medium;
+        font-weight: bold;
+        top: 84rem;
+        left: 28rem;
+        width: 300px;
+        color: #ffff
     }
 
     .imgs .container .text5 {
+        line-height: 2rem;
         position: absolute;
-        top: 152rem;
-        color: red;
+        z-index: 1;
+        font-size: medium;
+        font-weight: bold;
+        top: 118rem;
+        left: 28rem;
+        width: 300px;
+        color: #ffff
     }
 
     .imgs .container .text6 {
+        line-height: 2rem;
         position: absolute;
-        top: 186rem;
-        color: red;
+        z-index: 1;
+        font-size: medium;
+        font-weight: bold;
+        top: 118rem;
+        left: 1rem;
+        width: 300px;
+        color: #ffff
     }
 
     .imgs .container .text7 {
+        line-height: 2rem;
         position: absolute;
-        top: 220rem;
-        color: red;
+        z-index: 1;
+        font-size: medium;
+        font-weight: bold;
+        top: 84rem;
+        left: 1rem;
+        width: 300px;
+        color: #ffff
     }
 
     .imgs .container .text8 {
+        line-height: 2rem;
         position: absolute;
-        top: 254rem;
-        color: red;
-    }
-
-    img {
-        position: relative;
-        padding-bottom: 15rem;
-        background-color: #333;
-        width: 25rem;
-        height: 30rem;
-        display: flex;
-        align-items: center;
-    }
-
-    .askquest {
-        height: 100vh;
-        background-color: ;
+        z-index: 1;
+        font-size: medium;
+        font-weight: bold;
+        top: 50rem;
+        left: 1rem;
+        width: 300px;
+        color: #ffff
     }
 
     .askquest .container {
@@ -189,59 +482,17 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 3.2rem;
-        background-color: #333;
+        gap: 2.2rem;
+        background-color: rgb(51, 51, 51);
     }
 
     .askquest .container>button {
-        background-color: rgb(81, 62, 62);
-        width: 80%;
-        height: 5rem;
-        /* height: 10rem; */
-    }
-
-    .askquest .container>p {
-        font-weight: bold;
-        font-size: medium;
-        text-align: center;
-        background-color: red;
-        width: 80%;
-        /* height: 40%; */
-        /* background-color: rgb(81, 62, 62);
-        width: 80%;
-        height: 5rem; */
-        /* height: 10rem; */
-    }
-
-    .footer {
-        line-height: 2rem;
-        height: 20vh;
         background-color: black;
-        color: white;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        color: #ffff;
+        font-size: x-small;
+        width: 80%;
+        height: 3.3rem;
     }
+
+
 }
-
-/* .container { */
-/* display: flex; */
-/* max-width: 100px; */
-/* max-width: 500px;
-        max-height: 100px;
-/        left: 3rem; */
-/* width: 21.5rem;
-        top: 20rem;
-        color: red;
-        display: flex; */
-
-
-/* } */
-/* .imgs div > p{
-        position: absolute;
-        display: flex;
-        color: red;
-        margin: 21px;
-        
-    } */
