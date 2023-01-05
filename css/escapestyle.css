@@ -4,6 +4,37 @@
     box-sizing: border-box;
 }
 
+@keyframes color {
+    0% {
+        background: #bebebe;
+    }
+
+    20% {
+        background: #7e7f7e;
+    }
+
+    40% {
+        background: #785d4f88;
+    }
+
+    60% {
+        background: #626262;
+    }
+
+    80% {
+        background: #3d3d3d;
+    }
+
+    100% {
+        background: #942727c1;
+    }
+}
+
+body {
+    /* background-color: rgba(255, 0, 0, 0.257); */
+    font-size: 62.5%;
+}
+
 .logo {
     background: url(../img/img-escape/cropped-most-popular-escape-room-games.png)no-repeat center center/cover;
     position: relative;
@@ -12,6 +43,7 @@
     opacity: 0.8;
     width: auto;
     max-width: 100%;
+    background-color: #333;
 }
 
 /* .menu-wrap .hamburger{
@@ -24,7 +56,11 @@
     bottom: 0;
 }
 
-@media (max-width: 576px) {
+@media(max-width:576px) {
+
+    /* .body{
+        background-color: red;
+    } */
     .logo {
         background-repeat: no-repeat;
         background-size: cover;
@@ -55,10 +91,157 @@
         color: red;
     }
 
-    .containers .background {
+    /* .containers .background {
         background-color: #333;
         height: 9.3rem;
         width: 100vw;
         margin-top: 20rem;
+    } */
+    .imgs {
+        height: 1000vh;
+        background: #2a2f2f;
+        /* Fallback */
+        animation: color 9s infinite linear;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .imgs .container {
+        position: relative;
+        display: grid;
+
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+
+    .imgs .container .text {
+        line-height: 2rem;
+        position: absolute;
+        font-size: medium;
+        font-weight: bold;
+        top: 16rem;
+        left: 5rem;
+        width: 300px;
+        color: red;
+    }
+
+    .imgs .container .text2 {
+        position: absolute;
+        top: 50rem;
+        color: red;
+    }
+
+    .imgs .container .text3 {
+        position: absolute;
+        top: 84rem;
+        color: red;
+    }
+
+    .imgs .container .text4 {
+        position: absolute;
+        top: 118rem;
+        color: red;
+    }
+
+    .imgs .container .text5 {
+        position: absolute;
+        top: 152rem;
+        color: red;
+    }
+
+    .imgs .container .text6 {
+        position: absolute;
+        top: 186rem;
+        color: red;
+    }
+
+    .imgs .container .text7 {
+        position: absolute;
+        top: 220rem;
+        color: red;
+    }
+
+    .imgs .container .text8 {
+        position: absolute;
+        top: 254rem;
+        color: red;
+    }
+
+    img {
+        position: relative;
+        padding-bottom: 15rem;
+        background-color: #333;
+        width: 25rem;
+        height: 30rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .askquest {
+        height: 100vh;
+        background-color: ;
+    }
+
+    .askquest .container {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3.2rem;
+        background-color: #333;
+    }
+
+    .askquest .container>button {
+        background-color: rgb(81, 62, 62);
+        width: 80%;
+        height: 5rem;
+        /* height: 10rem; */
+    }
+
+    .askquest .container>p {
+        font-weight: bold;
+        font-size: medium;
+        text-align: center;
+        background-color: red;
+        width: 80%;
+        /* height: 40%; */
+        /* background-color: rgb(81, 62, 62);
+        width: 80%;
+        height: 5rem; */
+        /* height: 10rem; */
+    }
+
+    .footer {
+        line-height: 2rem;
+        height: 20vh;
+        background-color: black;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
+
+/* .container { */
+/* display: flex; */
+/* max-width: 100px; */
+/* max-width: 500px;
+        max-height: 100px;
+/        left: 3rem; */
+/* width: 21.5rem;
+        top: 20rem;
+        color: red;
+        display: flex; */
+
+
+/* } */
+/* .imgs div > p{
+        position: absolute;
+        display: flex;
+        color: red;
+        margin: 21px;
+        
+    } */
