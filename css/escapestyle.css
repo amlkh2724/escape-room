@@ -47,11 +47,23 @@
         background: #942727c1;
     }
 }
-
+@keyframes moving360{
+    to{rotate: 360deg;}
+}
+.animation360{
+    display: none;
+    padding-bottom: 0;
+    width: 6rem;
+    height: 6rem;
+    position: absolute;
+    left: 2rem;
+    top: 6rem;
+    border-radius: 50%;
+    animation: moving360 3s infinite;
+    
+}
 
 /* iphone x */
-
-
 .logo {
     background: url(../img/img-escape/cropped-most-popular-escape-room-games.png)no-repeat center center/cover;
     position: relative;
@@ -61,7 +73,32 @@
     width: auto;
     background-color: #333;
 }
+.reveal-text{
+    display: flex;
+    /* background-color: rgba(255, 0, 0, 0.085); */
+    background-color: rgba(51, 51, 51, 0.314);
+    /* font-size: xx-small; */
+    margin-top: 5rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 8rem;
+    animation: shadow-pulse 1.5s infinite;
+}
 
+/* .reveal-text {
+    position: relative;
+    left: -100%;
+  
+    animation: reveal-text 10s  infinite;
+  }
+  
+  @keyframes reveal-text {
+    to {
+      left: 0;
+    }
+  }
+   */
 #showcase {
     position: absolute;
 }
@@ -71,16 +108,19 @@
     z-index: 5;
     display: grid;
     justify-content: end;
-    padding-right: 4rem;
+    padding-right: 2rem;
     height: 4rem;
     width: 100%;
     background-color: rgba(51, 51, 51, 0.818);
-    /* display: flex;
-    justify-content: end;
-    align-items: flex-end; */
+}
 
-    /* background-color: red; */
-    /* width: 120%; */
+.color {
+    color: red;
+}
+
+.color2 {
+    font-weight: bold;
+    font-size: 0.8cm;
 }
 
 .logo {
@@ -88,24 +128,6 @@
     background-size: cover;
     background-size: auto;
 }
-
-
-/* #showcase .container {
-    
-    z-index: 1;
-    height: 3.8rem;
-    background-color: rgba(0, 0, 0, 0.988);
-    display: flex;
-    align-items: center;
-    justify-content: end;
-} */
-
-/* .containers { */
-/* height: 5rem; */
-/* color: #ffff;
-    background: #333;
-    text-align: center;
-} */
 
 .containers>p {
     padding: 1rem;
@@ -138,7 +160,6 @@ a.animation {
     display: grid;
     justify-content: center;
     align-items: center;
-    /* grid-template-columns: max-content; */
     width: 400px;
     gap: 4rem;
 
@@ -149,27 +170,22 @@ a.animation {
     top: 16rem;
     right: 5rem;
     color: #ffff;
-    /* text-align: center; */
-    /* width: 22rem; */
 }
 
 .imgs .container .text2 {
     position: absolute;
     top: 50rem;
-    /* color: red; */
 
 }
 
 .imgs .container .text3 {
     position: absolute;
     top: 84rem;
-    /* color: red; */
 }
 
 .imgs .container .text4 {
     position: absolute;
     top: 118rem;
-    /* color: red; */
 }
 
 .imgs .container .text5 {
@@ -185,13 +201,11 @@ a.animation {
 .imgs .container .text7 {
     position: absolute;
     top: 220rem;
-    /* color: red; */
 }
 
 .imgs .container .text8 {
     position: absolute;
     top: 254rem;
-    /* color: red; */
 }
 
 img {
@@ -259,6 +273,9 @@ img {
 
 
 @media (min-width:300px) {
+    .reveal-text{
+        height: 2.5rem;
+    }
     .imgs {
         height: 550vh;
         width: 100%;
@@ -281,6 +298,9 @@ img {
     .imgs {
         height: 690vh;
     }
+    .animation360{
+        top: 10rem;
+    }
 
     .askquest .container {
         gap: 2rem;
@@ -301,6 +321,7 @@ img {
         width: 100%;
     }
 
+  
     .imgs .container {
         grid-template-columns: 1fr 1fr;
         width: 800px;
@@ -423,6 +444,9 @@ img {
         grid-template-columns: 1fr 1fr;
         width: 800px;
     }
+    .animation360{
+        top: 11rem;
+    }
 
     .imgs {
         height: 380vh;
@@ -543,13 +567,21 @@ img {
 
 
 }
-
+/* desktop */
 @media (min-width:992px) {
     .logo {
         background: url(../img/img-escape/cropped-most-popular-escape-room-games.png)no-repeat center center/cover;
         width: 100vw;
         height: 100vh;
     }
+    .reveal-text{
+        height: 8rem;
+    }
+    .animation360{
+        display: block;
+        top: 6rem;
+    }
+
 
     .imgs .container {
         gap: 1rem;
@@ -609,6 +641,13 @@ img {
         z-index: 1;
         top: 16rem;
         left: 34rem;
+    }
+    .askquest .container>button {
+        background-color: black;
+        color: #ffff;
+        font-size: medium;
+        width: 80%;
+        height: 4rem;
     }
 
 
