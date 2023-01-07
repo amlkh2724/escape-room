@@ -26,31 +26,11 @@ body {
 #showcase {
   position: absolute;
   top: 0;
-  /* background: #333; */
   width: 100%;
   color: #fff;
   height: 21.8vh;
   position: relative;
 }
-
-/* #showcase:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-  } */
-
-/* #showcase .showcase-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    height: 100%;
-  } */
 
 #showcase h1 {
   font-size: 4rem;

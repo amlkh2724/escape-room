@@ -142,24 +142,28 @@
 .menu-wrap .menu>div>div>ul>li>a:hover {
   text-decoration: underline 0.5rem black solid;
 }
-@media (min-width:200px){
+
+@media (min-width:200px) {
   .menu-wrap .menu>div>div>ul>li {
     list-style: none;
     color: #fff;
     font-size: 1rem;
     padding: 0.8rem;
   }
+
   .menu-wrap .menu>div {
     width: 50vw;
   }
 }
-@media (min-width:992px){
+
+@media (min-width:992px) {
   .menu-wrap .menu>div>div>ul>li {
     list-style: none;
     color: #fff;
     font-size: 1rem;
     padding: 0.8rem;
   }
+
   .menu-wrap .menu>div {
     width: 35vw;
     height: 40vh;

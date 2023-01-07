@@ -1,11 +1,13 @@
  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+ /* reset */
  * {
      padding: 0;
      margin: 0;
      box-sizing: border-box;
  }
 
+ /* animation */
  @keyframes shadow-pulse {
      0% {
          box-shadow: 0 0 35px rgb(176, 18, 18);
@@ -53,6 +55,15 @@
      }
  }
 
+ @keyframes opacitychange {
+     0% {
+         opacity: 0;
+     }
+
+     100% {
+         opacity: 1;
+     }
+ }
 
  .escape {
      font-size: 0.3cm;
@@ -76,7 +87,7 @@
      left: 2rem;
      top: 6rem;
      border-radius: 50%;
-     animation: moving360 5s  ease-in-out infinite;
+     animation: moving360 5s ease-in-out infinite;
 
  }
 
@@ -89,6 +100,19 @@
      opacity: 0.8;
      width: auto;
      background-color: #333;
+ }
+
+ .askquest .container>p {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background-color: rgba(255, 255, 255, 0.085);
+     font-size: x-small;
+     font-weight: bold;
+     font-family: 'Courier New', Courier, monospace;
+     width: 80%;
+     height: 2.5rem;
+     border: 2px black solid;
  }
 
  .reveal-text {
@@ -146,6 +170,21 @@
      text-align: center;
  }
 
+ .nextpage {
+     position: absolute;
+     left: 50%;
+     top: 390%;
+ }
+
+ .fa-angle-down {
+     font-size: 2cm;
+     color: rgba(0, 0, 0, 0.634);
+ }
+
+ .fa-angle-down:hover {
+     color: #ffff
+ }
+
  .imgs {
      height: 690vh;
      background: #2a2f2f;
@@ -165,6 +204,13 @@
      animation: shadow-pulse 1.5s infinite;
      font-weight: bold;
      font-size: large;
+ }
+
+ a.animation:hover {
+     background-color: rgba(255, 255, 255, 0.651);
+     color: #000000;
+
+     cursor: pointer;
  }
 
  .imgs .container {
@@ -255,13 +301,9 @@
      height: 3.3rem;
  }
 
- .askquest .container>p {
-     font-weight: bold;
-     font-size: medium;
-     text-align: center;
-     background-color: black;
-     width: 80%;
-     color: #ffff;
+ .askquest .container>button:hover {
+     background-color: rgba(255, 255, 255, 0.651);
+     color: #000000;
  }
 
  .footer {
@@ -283,13 +325,14 @@
      color: #ffff;
  }
 
-
-
-
-
  @media (min-width:300px) {
      .reveal-text {
          height: 2.5rem;
+     }
+
+     .askquest .container>p {
+         font-size: x-small;
+         color: #ffff;
      }
 
      .imgs {
@@ -309,10 +352,16 @@
          height: 4.3rem;
      }
  }
-/* for my laptop min size */
+
+ /* for my laptop min size */
  @media(min-width:500px) {
      .imgs {
          height: 690vh;
+     }
+
+     .askquest .container>p {
+         color: #ffff;
+         font-size: small;
      }
 
      .logoescape {
@@ -339,10 +388,15 @@
      }
  }
 
+ /* ipad responsive */
  @media (min-width:768px) {
      .imgs {
          height: 220vh;
          width: 100%;
+     }
+
+     .askquest .container>p {
+         font-size: small;
      }
 
      .logoescape {
@@ -475,6 +529,19 @@
          width: 800px;
      }
 
+     .askquest .container>p {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         background-color: rgba(255, 255, 255, 0.085);
+         font-size: larger;
+         font-weight: bold;
+         font-family: 'Courier New', Courier, monospace;
+         width: 80%;
+         height: 2.5rem;
+         border: 2px black solid;
+     }
+
      .logoescape {
          padding: 0;
          margin: 0;
@@ -501,100 +568,6 @@
          font-size: medium;
      }
 
-     .imgs .container .text {
-         line-height: 2rem;
-         position: absolute;
-         font-size: medium;
-         font-weight: bold;
-         top: 16rem;
-         left: 1rem;
-         width: 300px;
-         color: #ffff
-     }
-
-     .imgs .container .text2 {
-         line-height: 2rem;
-         position: absolute;
-         font-size: medium;
-         font-weight: bold;
-         top: 16rem;
-         left: 28rem;
-         width: 300px;
-         color: #ffff
-     }
-
-     .imgs .container .text3 {
-         line-height: 2rem;
-         position: absolute;
-         z-index: 1;
-         font-size: medium;
-         font-weight: bold;
-         top: 50rem;
-         left: 28rem;
-         width: 300px;
-         color: #ffff
-     }
-
-     .imgs .container .text4 {
-         line-height: 2rem;
-         position: absolute;
-         z-index: 1;
-         font-size: medium;
-         font-weight: bold;
-         top: 84rem;
-         left: 28rem;
-         width: 300px;
-         color: #ffff
-     }
-
-     .imgs .container .text5 {
-         line-height: 2rem;
-         position: absolute;
-         z-index: 1;
-         font-size: medium;
-         font-weight: bold;
-         top: 118rem;
-         left: 28rem;
-         width: 300px;
-         color: #ffff
-     }
-
-     .imgs .container .text6 {
-         line-height: 2rem;
-         position: absolute;
-         z-index: 1;
-         font-size: medium;
-         font-weight: bold;
-         top: 118rem;
-         left: 1rem;
-         width: 300px;
-         color: #ffff
-     }
-
-     .imgs .container .text7 {
-         line-height: 2rem;
-         position: absolute;
-         z-index: 1;
-         font-size: medium;
-         font-weight: bold;
-         top: 84rem;
-         left: 1rem;
-         width: 300px;
-         color: #ffff
-     }
-
-     .imgs .container .text8 {
-         line-height: 2rem;
-         position: absolute;
-         z-index: 1;
-         font-size: medium;
-         font-weight: bold;
-         top: 50rem;
-         left: 1rem;
-         width: 300px;
-         color: #ffff
-     }
-
      .askquest .container {
          padding: 1rem;
          display: flex;
@@ -605,14 +578,9 @@
      }
 
      .askquest .container>button {
-         background-color: black;
-         color: #ffff;
-         font-size: x-small;
-         width: 80%;
+         font-size: small;
          height: 3.3rem;
      }
-
-
  }
 
  /* desktop */
@@ -624,28 +592,14 @@
      }
 
      .logoescape {
-         padding: 0;
-         margin: 0;
+
          width: 15rem;
-
-
-     }
-
-     @keyframes opacitychange {
-         0% {
-             opacity: 0;
-         }
-
-         100% {
-             opacity: 1;
-         }
      }
 
      .reveal-text {
          font-family: Verdana, Geneva, Tahoma, sans-serif;
          height: 8rem;
          font-weight: bold;
-         /* animation: opacitychange 3s infinite; */
      }
 
      .animation360 {
@@ -665,7 +619,6 @@
      }
 
      .imgs .container .text {
-
          top: 16rem;
          left: 6rem;
          width: 300px;
@@ -733,5 +686,9 @@
          color: red;
      }
 
+     .askquest .container>p {
+         font-size: 0.6cm;
+
+     }
 
  }
