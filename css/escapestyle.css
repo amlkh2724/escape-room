@@ -1,681 +1,737 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
-
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-@keyframes shadow-pulse {
-    0% {
-        box-shadow: 0 0 35px rgb(176, 18, 18);
-    }
-
-    50% {
-        box-shadow: 0 0 35px rgb(255, 19, 19);
-    }
-
-    100% {
-        box-shadow: 0 0 35px rgb(157, 24, 24);
-    }
-}
-
-
-@keyframes color {
-    0% {
-        background: #bebebe;
-    }
-
-    20% {
-        background: #7e7f7e;
-    }
-
-    40% {
-        background: #785d4f88;
-    }
-
-    60% {
-        background: #626262;
-    }
-
-    80% {
-        background: #3d3d3d;
-    }
-
-    100% {
-        background: #942727c1;
-    }
-}
-
-@keyframes moving360 {
-    to {
-        rotate: 360deg;
-    }
-}
-
-@keyframes textmove {
-
-    from {
-        top: -100px;
-    }
-
-    to {
-        top: 0;
-    }
-}
-
-.animation360 {
-    display: none;
-    padding-bottom: 0;
-    width: 6rem;
-    height: 6rem;
-    position: absolute;
-    left: 2rem;
-    top: 6rem;
-    border-radius: 50%;
-    animation: moving360 3s infinite;
-
-}
-
-/* iphone x */
-.logo {
-    background: url(../img/img-escape/cropped-most-popular-escape-room-games.png)no-repeat center center/cover;
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    opacity: 0.8;
-    width: auto;
-    background-color: #333;
-}
-
-.reveal-text {
-    display: flex;
-    background-color: rgba(51, 51, 51, 0.314);
-    margin-top: 5rem;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    height: 8rem;
-    animation: shadow-pulse 1.5s infinite;
-}
-
-
-#showcase {
-    position: absolute;
-}
-
-#showcase .escapecontainer {
-    position: fixed;
-    z-index: 5;
-    display: grid;
-    justify-content: end;
-    padding-right: 2rem;
-    height: 4rem;
-    width: 100%;
-    background-color: rgba(51, 51, 51, 0.818);
-}
-
-.color {
-    color: red;
-}
-
-.color2 {
-    font-weight: bold;
-    font-size: 0.8cm;
-}
-
-.logo {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-size: auto;
-}
-
-.containers>p {
-    padding: 1rem;
-    text-align: center;
-}
-
-.imgs {
-    height: 690vh;
-    background: #2a2f2f;
-    animation: color 9s infinite linear;
-}
-
-a {
-    text-decoration: none;
-    list-style: none;
-}
-
-a.animation {
-    display: inline-block;
-    padding: 0.5rem 0.5rem;
-    color: red;
-    border-radius: 4px;
-    animation: shadow-pulse 1.5s infinite;
-    font-weight: bold;
-    font-size: large;
-}
-
-.imgs .container {
-    position: relative;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    width: 400px;
-    gap: 4rem;
-
-}
-
-.imgs .container .text {
-    position: absolute;
-    top: 16rem;
-    text-align: center;
-    line-height: 2rem;
-    width: 350px;
-    font-weight: bold;
-    /* width: 240px; */
-    /* right: rem; */
-    color: rgb(255, 255, 255);
-}
-
-.imgs .container .text2 {
-    position: absolute;
-    top: 50rem;
-
-}
-
-.imgs .container .text3 {
-    position: absolute;
-    top: 84rem;
-}
-
-.imgs .container .text4 {
-    position: absolute;
-    top: 118rem;
-}
-
-.imgs .container .text5 {
-    position: absolute;
-    top: 152rem;
-}
-
-.imgs .container .text6 {
-    position: absolute;
-    top: 186rem;
-}
-
-.imgs .container .text7 {
-    position: absolute;
-    top: 220rem;
-}
-
-.imgs .container .text8 {
-    position: absolute;
-    top: 254rem;
-}
-
-img {
-    position: relative;
-    padding-bottom: 15rem;
-    background-color: #333;
-    width: 25rem;
-    height: 30rem;
-    display: flex;
-    align-items: center;
-}
-
-.askquest {
-    height: 58vh;
-    background-color: #333;
-}
-
-.askquest .container {
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 3.2rem;
-    background-color: rgb(51, 51, 51);
-}
-
-.askquest .container>button {
-    background-color: black;
-    color: #ffff;
-    font-size: x-small;
-    width: 80%;
-    height: 3.3rem;
-}
-
-.askquest .container>p {
-    font-weight: bold;
-    font-size: medium;
-    text-align: center;
-    background-color: black;
-    width: 80%;
-    color: #ffff;
-}
-
-.footer {
-    line-height: 2rem;
-    height: 26vh;
-    background-color: black;
-    color: #ffff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer>h2 {
-    color: #ffff;
-}
-
-.footer>h3 {
-    color: #ffff;
-}
-
-
-
-
-
-@media (min-width:300px) {
-    .reveal-text {
-        height: 2.5rem;
-    }
-
-    .imgs {
-        height: 550vh;
-        width: 100%;
-    }
-
-    .askquest .container {
-        gap: 4rem;
-    }
-
-    .askquest .container>button {
-        background-color: black;
-        color: #ffff;
-        font-size: x-small;
-        width: 80%;
-        height: 4.3rem;
-    }
-}
-
-@media(min-width:500px) {
-    .imgs {
-        height: 690vh;
-    }
-
-    .animation360 {
-        top: 10rem;
-    }
-
-    .askquest .container {
-        gap: 2rem;
-    }
-
-    .askquest .container>button {
-        background-color: black;
-        color: #ffff;
-        font-size: x-small;
-        width: 80%;
-        height: 4.3rem;
-    }
-}
-
-@media (min-width:768px) {
-    .imgs {
-        height: 220vh;
-        width: 100%;
-    }
-
-
-    .imgs .container {
-        grid-template-columns: 1fr 1fr;
-        width: 800px;
-    }
-
-    .imgs .container .text {
-        line-height: 2rem;
-        font-weight: bold;
-        top: 16rem;
-        left: 1rem;
-        width: 300px;
-    }
-
-    .imgs .container .text2 {
-        line-height: 2rem;
-        font-weight: bold;
-        top: 16rem;
-        left: 28rem;
-        width: 300px;
-    }
-
-    .imgs .container .text3 {
-        line-height: 2rem;
-        position: absolute;
-        z-index: 1;
-        font-weight: bold;
-        top: 50rem;
-        left: 28rem;
-        width: 300px;
-    }
-
-    .imgs .container .text4 {
-        line-height: 2rem;
-        position: absolute;
-        z-index: 1;
-        font-weight: bold;
-        top: 84rem;
-        left: 28rem;
-        width: 300px;
-    }
-
-    .imgs .container .text5 {
-        line-height: 2rem;
-        position: absolute;
-        z-index: 1;
-        font-weight: bold;
-        top: 118rem;
-        left: 28rem;
-        width: 300px;
-    }
-
-    .imgs .container .text6 {
-        line-height: 2rem;
-        position: absolute;
-        z-index: 1;
-        font-weight: bold;
-        top: 118rem;
-        left: 1rem;
-        width: 300px;
-    }
-
-    .imgs .container .text7 {
-        line-height: 2rem;
-        position: absolute;
-        z-index: 1;
-        font-weight: bold;
-        top: 84rem;
-        left: 1rem;
-        width: 300px;
-    }
-
-    .imgs .container .text8 {
-        line-height: 2rem;
-        position: absolute;
-        z-index: 1;
-        font-weight: bold;
-        top: 50rem;
-        left: 1rem;
-        width: 300px;
-    }
-
-    .askquest {
-        height: 58vh;
-        background-color: #333;
-    }
-
-    .askquest .container {
-        padding: rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 4.2rem;
-        background-color: rgb(51, 51, 51);
-    }
-
-    .askquest .container>button {
-        background-color: black;
-        color: #ffff;
-        font-size: medium;
-        width: 80%;
-        height: 6rem;
-    }
-
-    .askquest .container>p {
-        font-weight: bold;
-        font-size: medium;
-        text-align: center;
-        background-color: black;
-        height: 2rem;
-        width: 80%;
-        color: #ffff;
-    }
-
-}
-
+ @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+ * {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+ }
+
+ @keyframes shadow-pulse {
+     0% {
+         box-shadow: 0 0 35px rgb(176, 18, 18);
+     }
+
+     50% {
+         box-shadow: 0 0 35px rgb(255, 19, 19);
+     }
+
+     100% {
+         box-shadow: 0 0 35px rgb(157, 24, 24);
+     }
+ }
+
+
+ @keyframes color {
+     0% {
+         background: #bebebe;
+     }
+
+     20% {
+         background: #7e7f7e;
+     }
+
+     40% {
+         background: #785d4f88;
+     }
+
+     60% {
+         background: #626262;
+     }
+
+     80% {
+         background: #3d3d3d;
+     }
+
+     100% {
+         background: #942727c1;
+     }
+ }
+
+ @keyframes moving360 {
+     to {
+         rotate: 360deg;
+     }
+ }
+
+
+ .escape {
+     font-size: 0.3cm;
+     box-shadow: -1px 5px 18px 1px #000000;
+ }
+
+ .escapecolor {
+     color: red;
+ }
+
+ .psize {
+     font-size: xx-small;
+ }
+
+ .animation360 {
+     display: none;
+     padding-bottom: 0;
+     width: 6rem;
+     height: 6rem;
+     position: absolute;
+     left: 2rem;
+     top: 6rem;
+     border-radius: 50%;
+     animation: moving360 5s  ease-in-out infinite;
+
+ }
+
+ /* iphone x */
+ .logo {
+     background: url(../img/img-escape/cropped-most-popular-escape-room-games.png)no-repeat center center/cover;
+     position: relative;
+     width: 100%;
+     height: 100vh;
+     opacity: 0.8;
+     width: auto;
+     background-color: #333;
+ }
+
+ .reveal-text {
+     display: flex;
+     background-color: rgba(51, 51, 51, 0.314);
+     margin-top: 5rem;
+     text-align: center;
+     align-items: center;
+     justify-content: center;
+     height: 8rem;
+     animation: shadow-pulse 1.5s infinite;
+ }
+
+
+ #showcase {
+     position: absolute;
+ }
+
+ #showcase .escapecontainer {
+     position: fixed;
+     z-index: 5;
+     display: grid;
+     justify-content: end;
+     padding-right: 2rem;
+     height: 4rem;
+     width: 100%;
+     background-color: rgba(51, 51, 51, 0.818);
+ }
+
+ .color {
+     color: red;
+ }
+
+ .color2 {
+     font-weight: bold;
+     font-size: 0.8cm;
+ }
+
+ .logo {
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-size: auto;
+ }
+
+ .logoescape {
+     padding: 0;
+     margin: 0;
+     width: 7rem;
+     height: 3rem;
+     background: none;
+ }
+
+ .containers>p {
+     padding: 1rem;
+     text-align: center;
+ }
+
+ .imgs {
+     height: 690vh;
+     background: #2a2f2f;
+     animation: color 9s infinite linear;
+ }
+
+ a {
+     text-decoration: none;
+     list-style: none;
+ }
+
+ a.animation {
+     display: inline-block;
+     padding: 0.5rem 0.5rem;
+     color: red;
+     border-radius: 4px;
+     animation: shadow-pulse 1.5s infinite;
+     font-weight: bold;
+     font-size: large;
+ }
+
+ .imgs .container {
+     position: relative;
+     display: grid;
+     justify-content: center;
+     align-items: center;
+     width: 400px;
+     gap: 4rem;
+
+ }
+
+ .imgs .container .text {
+     position: absolute;
+     top: 16rem;
+     text-align: center;
+     line-height: 2rem;
+     width: 350px;
+     font-weight: bold;
+     color: rgb(255, 255, 255);
+ }
+
+ .imgs .container .text2 {
+     position: absolute;
+     top: 50rem;
+
+ }
+
+ .imgs .container .text3 {
+     position: absolute;
+     top: 84rem;
+ }
+
+ .imgs .container .text4 {
+     position: absolute;
+     top: 118rem;
+ }
+
+ .imgs .container .text5 {
+     position: absolute;
+     top: 152rem;
+ }
+
+ .imgs .container .text6 {
+     position: absolute;
+     top: 186rem;
+ }
+
+ .imgs .container .text7 {
+     position: absolute;
+     top: 220rem;
+ }
+
+ .imgs .container .text8 {
+     position: absolute;
+     top: 254rem;
+ }
+
+ img {
+     position: relative;
+     padding-bottom: 15rem;
+     background-color: #333;
+     width: 25rem;
+     height: 30rem;
+     display: flex;
+     align-items: center;
+ }
+
+ .askquest {
+     height: 58vh;
+     background-color: #333;
+ }
+
+ .askquest .container {
+     padding: 1rem;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 3.2rem;
+     background-color: rgb(51, 51, 51);
+ }
+
+ .askquest .container>button {
+     background-color: black;
+     color: #ffff;
+     font-size: x-small;
+     width: 80%;
+     height: 3.3rem;
+ }
+
+ .askquest .container>p {
+     font-weight: bold;
+     font-size: medium;
+     text-align: center;
+     background-color: black;
+     width: 80%;
+     color: #ffff;
+ }
+
+ .footer {
+     line-height: 2rem;
+     height: 26vh;
+     background-color: black;
+     color: #ffff;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .footer>h2 {
+     color: #ffff;
+ }
+
+ .footer>h3 {
+     color: #ffff;
+ }
+
+
+
+
+
+ @media (min-width:300px) {
+     .reveal-text {
+         height: 2.5rem;
+     }
+
+     .imgs {
+         height: 550vh;
+         width: 100%;
+     }
+
+     .askquest .container {
+         gap: 4rem;
+     }
+
+     .askquest .container>button {
+         background-color: black;
+         color: #ffff;
+         font-size: x-small;
+         width: 80%;
+         height: 4.3rem;
+     }
+ }
 /* for my laptop min size */
+ @media(min-width:500px) {
+     .imgs {
+         height: 690vh;
+     }
 
-@media (min-width:770px) {
-    .imgs .container {
-        grid-template-columns: 1fr 1fr;
-        width: 800px;
-    }
+     .logoescape {
+         padding: 0;
+         margin: 0;
+         width: 9rem;
 
-    .animation360 {
-        top: 11rem;
-    }
+     }
 
-    .imgs {
-        height: 380vh;
-        background: #2a2f2f;
-        animation: color 9s infinite linear;
-    }
+     .animation360 {
+         top: 10rem;
+     }
 
-    .imgs .container .text {
-        line-height: 2rem;
-        position: absolute;
-        font-size: medium;
-        font-weight: bold;
-        top: 16rem;
-        left: 1rem;
-        width: 300px;
-        color: #ffff
-    }
+     .askquest .container {
+         gap: 2rem;
+     }
 
-    .imgs .container .text2 {
-        line-height: 2rem;
-        position: absolute;
-        font-size: medium;
-        font-weight: bold;
-        top: 16rem;
-        left: 28rem;
-        width: 300px;
-        color: #ffff
-    }
+     .askquest .container>button {
+         background-color: black;
+         color: #ffff;
+         font-size: x-small;
+         width: 80%;
+         height: 4.3rem;
+     }
+ }
 
-    .imgs .container .text3 {
-        line-height: 2rem;
-        position: absolute;
-        z-index: 1;
-        font-size: medium;
-        font-weight: bold;
-        top: 50rem;
-        left: 28rem;
-        width: 300px;
-        color: #ffff
-    }
+ @media (min-width:768px) {
+     .imgs {
+         height: 220vh;
+         width: 100%;
+     }
 
-    .imgs .container .text4 {
-        line-height: 2rem;
-        position: absolute;
-        z-index: 1;
-        font-size: medium;
-        font-weight: bold;
-        top: 84rem;
-        left: 28rem;
-        width: 300px;
-        color: #ffff
-    }
+     .logoescape {
+         padding: 0;
+         margin: 0;
+         width: 10rem;
 
-    .imgs .container .text5 {
-        line-height: 2rem;
-        position: absolute;
-        z-index: 1;
-        font-size: medium;
-        font-weight: bold;
-        top: 118rem;
-        left: 28rem;
-        width: 300px;
-        color: #ffff
-    }
+     }
 
-    .imgs .container .text6 {
-        line-height: 2rem;
-        position: absolute;
-        z-index: 1;
-        font-size: medium;
-        font-weight: bold;
-        top: 118rem;
-        left: 1rem;
-        width: 300px;
-        color: #ffff
-    }
+     .imgs .container {
+         grid-template-columns: 1fr 1fr;
+         width: 800px;
+     }
 
-    .imgs .container .text7 {
-        line-height: 2rem;
-        position: absolute;
-        z-index: 1;
-        font-size: medium;
-        font-weight: bold;
-        top: 84rem;
-        left: 1rem;
-        width: 300px;
-        color: #ffff
-    }
+     .imgs .container .text {
+         line-height: 2rem;
+         font-weight: bold;
+         top: 16rem;
+         left: 1rem;
+         width: 300px;
+     }
 
-    .imgs .container .text8 {
-        line-height: 2rem;
-        position: absolute;
-        z-index: 1;
-        font-size: medium;
-        font-weight: bold;
-        top: 50rem;
-        left: 1rem;
-        width: 300px;
-        color: #ffff
-    }
+     .imgs .container .text2 {
+         line-height: 2rem;
+         font-weight: bold;
+         top: 16rem;
+         left: 28rem;
+         width: 300px;
+     }
 
-    .askquest .container {
-        padding: 1rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 2.2rem;
-        background-color: rgb(51, 51, 51);
-    }
+     .imgs .container .text3 {
+         line-height: 2rem;
+         position: absolute;
+         z-index: 1;
+         font-weight: bold;
+         top: 50rem;
+         left: 28rem;
+         width: 300px;
+     }
 
-    .askquest .container>button {
-        background-color: black;
-        color: #ffff;
-        font-size: x-small;
-        width: 80%;
-        height: 3.3rem;
-    }
+     .imgs .container .text4 {
+         line-height: 2rem;
+         position: absolute;
+         z-index: 1;
+         font-weight: bold;
+         top: 84rem;
+         left: 28rem;
+         width: 300px;
+     }
+
+     .imgs .container .text5 {
+         line-height: 2rem;
+         position: absolute;
+         z-index: 1;
+         font-weight: bold;
+         top: 118rem;
+         left: 28rem;
+         width: 300px;
+     }
+
+     .imgs .container .text6 {
+         line-height: 2rem;
+         position: absolute;
+         z-index: 1;
+         font-weight: bold;
+         top: 118rem;
+         left: 1rem;
+         width: 300px;
+     }
+
+     .imgs .container .text7 {
+         line-height: 2rem;
+         position: absolute;
+         z-index: 1;
+         font-weight: bold;
+         top: 84rem;
+         left: 1rem;
+         width: 300px;
+     }
+
+     .imgs .container .text8 {
+         line-height: 2rem;
+         position: absolute;
+         z-index: 1;
+         font-weight: bold;
+         top: 50rem;
+         left: 1rem;
+         width: 300px;
+     }
+
+     .askquest {
+         height: 58vh;
+         background-color: #333;
+     }
+
+     .askquest .container {
+         padding: rem;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         gap: 4.2rem;
+         background-color: rgb(51, 51, 51);
+     }
+
+     .askquest .container>button {
+         background-color: black;
+         color: #ffff;
+         font-size: medium;
+         width: 80%;
+         height: 6rem;
+     }
+
+     .askquest .container>p {
+         font-weight: bold;
+         font-size: medium;
+         text-align: center;
+         background-color: black;
+         height: 2rem;
+         width: 80%;
+         color: #ffff;
+     }
+
+ }
+
+ /* for my laptop min size */
+
+ @media (min-width:770px) {
+     .imgs .container {
+         grid-template-columns: 1fr 1fr;
+         width: 800px;
+     }
+
+     .logoescape {
+         padding: 0;
+         margin: 0;
+         width: 12rem;
+
+     }
+
+     .animation360 {
+         top: 11rem;
+     }
+
+     .imgs {
+         height: 380vh;
+         background: #2a2f2f;
+         animation: color 9s infinite linear;
+     }
+
+     .escape {
+         font-size: 0.4cm;
+         box-shadow: -1px 12px 18px 1px #000000;
+     }
+
+     .psize {
+         font-size: medium;
+     }
+
+     .imgs .container .text {
+         line-height: 2rem;
+         position: absolute;
+         font-size: medium;
+         font-weight: bold;
+         top: 16rem;
+         left: 1rem;
+         width: 300px;
+         color: #ffff
+     }
+
+     .imgs .container .text2 {
+         line-height: 2rem;
+         position: absolute;
+         font-size: medium;
+         font-weight: bold;
+         top: 16rem;
+         left: 28rem;
+         width: 300px;
+         color: #ffff
+     }
+
+     .imgs .container .text3 {
+         line-height: 2rem;
+         position: absolute;
+         z-index: 1;
+         font-size: medium;
+         font-weight: bold;
+         top: 50rem;
+         left: 28rem;
+         width: 300px;
+         color: #ffff
+     }
+
+     .imgs .container .text4 {
+         line-height: 2rem;
+         position: absolute;
+         z-index: 1;
+         font-size: medium;
+         font-weight: bold;
+         top: 84rem;
+         left: 28rem;
+         width: 300px;
+         color: #ffff
+     }
+
+     .imgs .container .text5 {
+         line-height: 2rem;
+         position: absolute;
+         z-index: 1;
+         font-size: medium;
+         font-weight: bold;
+         top: 118rem;
+         left: 28rem;
+         width: 300px;
+         color: #ffff
+     }
+
+     .imgs .container .text6 {
+         line-height: 2rem;
+         position: absolute;
+         z-index: 1;
+         font-size: medium;
+         font-weight: bold;
+         top: 118rem;
+         left: 1rem;
+         width: 300px;
+         color: #ffff
+     }
+
+     .imgs .container .text7 {
+         line-height: 2rem;
+         position: absolute;
+         z-index: 1;
+         font-size: medium;
+         font-weight: bold;
+         top: 84rem;
+         left: 1rem;
+         width: 300px;
+         color: #ffff
+     }
+
+     .imgs .container .text8 {
+         line-height: 2rem;
+         position: absolute;
+         z-index: 1;
+         font-size: medium;
+         font-weight: bold;
+         top: 50rem;
+         left: 1rem;
+         width: 300px;
+         color: #ffff
+     }
+
+     .askquest .container {
+         padding: 1rem;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         gap: 2.2rem;
+         background-color: rgb(51, 51, 51);
+     }
+
+     .askquest .container>button {
+         background-color: black;
+         color: #ffff;
+         font-size: x-small;
+         width: 80%;
+         height: 3.3rem;
+     }
 
 
-}
+ }
 
-/* desktop */
-@media (min-width:992px) {
-    .logo {
-        background: url(../img/img-escape/cropped-most-popular-escape-room-games.png)no-repeat center center/cover;
-        width: 100vw;
-        height: 100vh;
-    }
+ /* desktop */
+ @media (min-width:992px) {
+     .logo {
+         background: url(../img/img-escape/cropped-most-popular-escape-room-games.png)no-repeat center center/cover;
+         width: 100vw;
+         height: 100vh;
+     }
 
-    .reveal-text {
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        /* font-family: ""; */
-        height: 8rem;
-        font-weight: bold;
-    }
-
-    .animation360 {
-        display: block;
-        top: 6rem;
-    }
+     .logoescape {
+         padding: 0;
+         margin: 0;
+         width: 15rem;
 
 
-    .imgs .container {
-        gap: 1rem;
-        grid-template-columns: 1fr 1fr;
-        width: 100%
-    }
+     }
 
-    .imgs {
-        padding: 1rem;
-    }
+     @keyframes opacitychange {
+         0% {
+             opacity: 0;
+         }
 
-    .imgs .container .text {
+         100% {
+             opacity: 1;
+         }
+     }
 
-        top: 16rem;
-        left: 6rem;
-        width: 300px;
-        color: #ffff
-    }
+     .reveal-text {
+         font-family: Verdana, Geneva, Tahoma, sans-serif;
+         height: 8rem;
+         font-weight: bold;
+         /* animation: opacitychange 3s infinite; */
+     }
 
-    .imgs .container .text2 {
-        z-index: 1;
-        top: 47rem;
-        left: 6rem;
-    }
-
-    .imgs .container .text3 {
-        z-index: 1;
-        top: 78rem;
-        left: 6rem;
-    }
-
-    .imgs .container .text4 {
-        z-index: 1;
-        top: 109rem;
-        left: 6rem;
-    }
-
-    .imgs .container .text5 {
-        z-index: 1;
-        top: 109rem;
-        left: 34rem;
-    }
-
-    .imgs .container .text6 {
-        z-index: 1;
-        top: 78rem;
-        left: 34rem;
-    }
-
-    .imgs .container .text7 {
-        z-index: 1;
-        top: 47rem;
-        left: 34rem;
-    }
-
-    .imgs .container .text8 {
-        z-index: 1;
-        top: 16rem;
-        left: 34rem;
-    }
-
-    .askquest .container>button {
-        background-color: black;
-        color: #ffff;
-        font-size: medium;
-        width: 80%;
-        height: 4rem;
-    }
-
-    .escape {
-        font-size: 1cm;
-        -webkit-box-shadow: -1px 19px 18px 3px #000000;
-        box-shadow: -1px 19px 18px 3px #000000;
-    }
-
-    .escapecolor {
-        color: red;
-    }
+     .animation360 {
+         display: block;
+         top: 6rem;
+     }
 
 
-}
+     .imgs .container {
+         gap: 1rem;
+         grid-template-columns: 1fr 1fr;
+         width: 100%
+     }
+
+     .imgs {
+         padding: 1rem;
+     }
+
+     .imgs .container .text {
+
+         top: 16rem;
+         left: 6rem;
+         width: 300px;
+         color: #ffff
+     }
+
+     .imgs .container .text2 {
+         z-index: 1;
+         top: 47rem;
+         left: 6rem;
+     }
+
+     .imgs .container .text3 {
+         z-index: 1;
+         top: 78rem;
+         left: 6rem;
+     }
+
+     .imgs .container .text4 {
+         z-index: 1;
+         top: 109rem;
+         left: 6rem;
+     }
+
+     .imgs .container .text5 {
+         z-index: 1;
+         top: 109rem;
+         left: 34rem;
+     }
+
+     .imgs .container .text6 {
+         z-index: 1;
+         top: 78rem;
+         left: 34rem;
+     }
+
+     .imgs .container .text7 {
+         z-index: 1;
+         top: 47rem;
+         left: 34rem;
+     }
+
+     .imgs .container .text8 {
+         z-index: 1;
+         top: 16rem;
+         left: 34rem;
+     }
+
+     .askquest .container>button {
+         background-color: black;
+         color: #ffff;
+         font-size: medium;
+         width: 80%;
+         height: 4rem;
+     }
+
+     .escape {
+         animation: opacitychange 5s ease-in-out infinite;
+         font-size: 1cm;
+         -webkit-box-shadow: -1px 19px 18px 3px #000000;
+         box-shadow: -1px 19px 18px 3px #000000;
+     }
+
+     .escapecolor {
+         color: red;
+     }
+
+
+ }
